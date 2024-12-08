@@ -1,4 +1,4 @@
-import Login from "./components/auth/login";
+import AppRoutes from "./app-routes";
 import { ModeToggle } from "./components/ui/mode-toggle";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <div className="absolute top-4 right-4 z-10">
         <ModeToggle />
       </div>
-      <Login />
+      <AppRoutes />
       {/* Add other page content here */}
     </div>
   );

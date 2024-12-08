@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
 import { Input } from "../ui/input";
@@ -33,7 +34,7 @@ const Login = () => {
   };
 
   return (
-    <main className="flex h-screen w-full items-center justify-center">
+    <main className="flex h-screen items-center justify-center">
       <div
         className="backdrop-blur-[16px] backdrop-saturate-[180%] 
                 bg-white dark:bg-[rgba(17,25,40,0.75)] 
@@ -113,14 +114,10 @@ const Login = () => {
         </div>
         <div className="mt-4 flex justify-center">
           <p className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-            Don't have an account?
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              className="underline"
-            >
+            Don't have an account?{" "}
+            <Link to="/signup" className="underline">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>
