@@ -8,7 +8,6 @@ function App() {
         <ModeToggle />
       </div>
       <AppRoutes />
-      {/* Add other page content here */}
     </div>
   );
 }
